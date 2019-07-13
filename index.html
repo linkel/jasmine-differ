@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+      
+      <link rel="stylesheet" type="text/css" href="./index.css">
+  </head>
+  <body>
+      <div class="container">
+            <div class="input-wrapper">
+                    <div class="input-row">
+                            <textarea id="text-input" rows="20" cols="140" spellcheck="false" oninput="formatText()"></textarea>
+                      </div>
+                      <div class="result-row">
+                            <div class="result">
+                                <h2>Expected:</h2>
+                                <div id="expected-result">
+                                </div>
+                            </div>
+                            <div class="result">
+                                <h2>Actual:</h2>
+                                <div id="actual-result">
+                                </div>
+                            </div>
+                      </div>
+              </div>
+      </div>
+      <script src="./index.js"></script>
+  </body>
+</html>
