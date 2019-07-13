@@ -17,9 +17,9 @@ Once I have something that can do that, then I can think about diffing it. After
 
 For example, I would like to turn the following:
 
-```
+
 Expected spy EventServiceMock.getEventsObservable to have been called with [ Object({ eventGroupIds: [ 'ROOT' ], selfEventGroupIds: [ 'ROOT' ], startDate: Object({ year: 2019, month: 6, day: 17 }), endDate: Object({ year: 2019, month: 6, day: 24 }), manualOnly: false, trainableOnly: false, boutsOnly: false, pageNumber: 1, pageSize: 10, triggerIds: [  ], statusIds: [  ], behaviorIds: [  ], fighterIds: [  ], equipmentIds: [  ], includeAllFighterAndTrainerEvents: true, sortField: 'RecordDateLocal', sortDirection: 'desc' }) ] but actual calls were [ Object({ eventGroupIds: [ 'ROOT' ], selfEventGroupIds: [ 'ROOT' ], startDate: Object({ year: 2019, month: 6, day: 17 }), endDate: Object({ year: 2019, month: 6, day: 24 }), manualOnly: false, trainableOnly: false, boutsOnly: false, pageNumber: 1, pageSize: 10, triggerIds: [  ], statusIds: [  ], behaviorIds: [  ], fighterIds: [  ], equipmentIds: [  ], cameraIds: [  ], includeAllFighterAndTrainerEvents: true, sortField: 'RecordDateLocal', sortDirection: 'desc' }) ].
-```
+
 
 into this:
 
