@@ -14,10 +14,18 @@ const formatText = () => {
     expectedResult.innerHTML = myString
                                 .substring(expectedResult_startIndex, expectedResult_endIndex)
                                 .split(',')
-                                .join(',<br>');
+                                .join(',\n');
 
     actualResult.innerHTML = myString
                                 .substring(actualResult_startIndex, actualResult_endIndex)
                                 .split(',')
-                                .join(',<br>');
+                                .join(',\n');
+}
+
+const expectedDiff = () => {
+
+}
+
+const actualDiff = () => {
+    
 }

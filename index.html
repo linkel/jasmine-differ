@@ -8,18 +8,18 @@
       <div class="container">
             <div class="input-wrapper">
                     <div class="input-row">
-                            <textarea id="text-input" rows="20" cols="140" spellcheck="false" oninput="formatText()"></textarea>
+                            <textarea id="text-input" rows="20" cols="150" spellcheck="false" oninput="formatText()"></textarea>
                       </div>
                       <div class="result-row">
                             <div class="result">
                                 <h2>Expected:</h2>
-                                <div id="expected-result">
-                                </div>
+                                <textarea rows="40" cols="70" spellcheck="false" id="expected-result" onchange="expectedDiff()">
+                                </textarea>
                             </div>
                             <div class="result">
                                 <h2>Actual:</h2>
-                                <div id="actual-result">
-                                </div>
+                                <textarea rows="40" cols="70" spellcheck="false" id="actual-result" onchange="actualDiff()">
+                                </textarea>
                             </div>
                       </div>
               </div>

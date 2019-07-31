@@ -71,9 +71,8 @@ html {
 }
 
 .result {
-	margin: 50px;
+	margin: 50px 20px;
 	font-size: 2rem;
-	max-width: 30%;
 	text-align: left;
 }
 
