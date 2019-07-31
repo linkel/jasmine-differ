@@ -11,16 +11,10 @@
                             <textarea id="text-input" rows="20" cols="150" spellcheck="false" oninput="formatText()"></textarea>
                       </div>
                       <div class="result-row">
-                            <div class="result">
-                                <h2>Expected:</h2>
-                                <textarea rows="40" cols="70" spellcheck="false" id="expected-result" onchange="expectedDiff()">
-                                </textarea>
-                            </div>
-                            <div class="result">
-                                <h2>Actual:</h2>
-                                <textarea rows="40" cols="70" spellcheck="false" id="actual-result" onchange="actualDiff()">
-                                </textarea>
-                            </div>
+                          <table>
+                              <tbody id="result">
+                              </tbody>
+                          </table>
                       </div>
               </div>
       </div>

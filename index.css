@@ -54,7 +54,7 @@ table {
 }
   
 html {
-    font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 .container {
@@ -84,4 +84,31 @@ h2 {
 	font-weight: bold;
 	font-size: 3rem;
 	margin: 10px 0;
+}
+
+table {
+	font-size: 2rem;
+	width: 100%;
+	border: 20px solid white;
+	font-family: monospace;
+}
+
+tr {
+	line-height: 1.4;
+}
+
+.diff-line-number {
+	color: rgb(153, 153, 153);
+    min-width: 33px;
+    text-align: right;
+    padding: 0px 8px 0px 5px;
+}
+
+.diff-line {
+	position: relative;
+    width: 50%;
+    word-break: break-all;
+    line-height: 1rem;
+    margin: 0px 1px;
+    border-right: 20px solid white;
 }
