@@ -19,27 +19,30 @@ const formatText = () => {
     let actualResult = myString
                         .substring(actualResult_startIndex, actualResult_endIndex)
                         .split(/,/g)
-                        
-    for (i = 0; i < expectedResult.length; i++) {
+    
+    let longest = Math.max(expectedResult.length, actualResult.length);
+
+    for (i = 0; i < longest; i++) {
         let row = document.createElement("tr")
         let elineNum = document.createElement("td");
         let elineData = document.createElement("td");
         elineNum.className = "diff-line-number";
         elineData.className = "diff-line";
         elineNum.innerHTML = i+1;
-        elineData.innerHTML = expectedResult[i];
+        elineData.innerHTML = expectedResult[i] ? expectedResult[i] : '';
 
         let alineNum = document.createElement("td");
         let alineData = document.createElement("td");
         alineNum.className = "diff-line-number";
         alineData.className = "diff-line";
         alineNum.innerHTML = i+1;
-        alineData.innerHTML = actualResult[i];
+        alineData.innerHTML = actualResult[i] ? actualResult[i] : '';
 
         row.appendChild(elineNum);
         row.appendChild(elineData);
         row.appendChild(alineNum);
         row.appendChild(alineData);
+        
         resultTable.appendChild(row);
     }
 }
